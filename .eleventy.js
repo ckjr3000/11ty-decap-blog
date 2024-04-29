@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig){
 
     eleventyConfig.addPassthroughCopy('./src/style.css');
     eleventyConfig.addPassthroughCopy('./src/assets');
+    eleventyConfig.addPassthroughCopy('./src/admin/config.yml');
 
     // Format date 
     eleventyConfig.addFilter("postDate", (dateObj) => {
